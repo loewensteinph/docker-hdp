@@ -99,11 +99,12 @@ echo "127.0.0.1 dn0 dn0.dev" >> /etc/hosts
 
 ##Copy Blueprint to Server and Submit
 
-docker cp D:\docker-hdp-master compose_ambari-server.dev_1:/share/
+docker cp D:\docker-hdp-master\ compose_ambari-server.dev_1:/
 
 Container:
 
-cd /share/
+cd /docker-hdp-master/
+
 sh submit-blueprint.sh single-container examples/blueprints/single-container.json
 
 ## Fix HDFS Home Folder
