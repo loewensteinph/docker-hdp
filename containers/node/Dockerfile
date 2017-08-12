@@ -28,5 +28,20 @@ RUN yum install -y druid*
 RUN yum install -y superset*
 RUN yum install -y lzo snappy-devel rpcbind
 RUN rm /etc/yum.repos.d/hdp*.repo
+
+RUN yum clean all; \
+    rpm --rebuilddb; \
+    yum install -y curl which tar sudo openssh-server openssh-clients rsync
+# update libselinux. see https://github.com/sequenceiq/hadoop-docker/issues/14
+RUN yum update -y libselinux
+
+#generate ssh key
+RUN ssh-keygen -q -N "" -t dsa -f /etc/ssh/ssh_host_dsa_key
+RUN ssh-keygen -q -N "" -t rsa -f /etc/ssh/ssh_host_rsa_key
+RUN sed -ri 's/session    required     pam_loginuid.so/#session    required     pam_loginuid.so/g' /etc/pam.d/sshd
+RUN mkdir -p /root/.ssh && chown root.root /root && chmod 700 /root/.ssh
+
+RUN echo 'root:hadoop' | chpasswd
+
 ADD scripts/start.sh /start.sh
 CMD /start.sh

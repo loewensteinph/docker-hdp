@@ -96,5 +96,14 @@ echo "127.0.0.1 master0 master0.dev" >> /etc/hosts
 echo "127.0.0.1 dn0 dn0.dev" >> /etc/hosts
 ```
 
+
+##Copy Blueprint to Server and Submit
+docker cp D:\docker-hdp-master compose_ambari-server.dev_1:/share/
+
+Container:
+cd /share/
+sh submit-blueprint.sh single-container examples/blueprints/single-container.json
+
+
 TODO:
 1. Steps for using latest Docker 1.12 Swarm & Compose on multiple hosts
