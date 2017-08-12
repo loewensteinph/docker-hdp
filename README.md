@@ -104,6 +104,11 @@ Container:
 cd /share/
 sh submit-blueprint.sh single-container examples/blueprints/single-container.json
 
+## Fix HDFS Home Folder
+Run on Node1 bash
+
+	sudo -u hdfs hdfs dfs  -mkdir /user/admin
+	sudo -u hdfs hdfs dfs  -chown admin:admin /user/admin
 
 TODO:
 1. Steps for using latest Docker 1.12 Swarm & Compose on multiple hosts

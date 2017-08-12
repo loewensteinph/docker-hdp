@@ -1,1 +1,3 @@
 *.swp
+*.suo
+/.vs/docker-hdp/v15/.suo
