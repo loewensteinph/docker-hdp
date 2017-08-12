@@ -1,6 +1,7 @@
 {
   "ExpandedNodes": [
     "",
+    "\\containers",
     "\\containers\\ambari-server",
     "\\containers\\ambari-server\\scripts",
     "\\containers\\node",
@@ -8,9 +9,8 @@
     "\\containers\\postgres",
     "\\containers\\postgres\\scripts",
     "\\examples",
-    "\\examples\\blueprints",
-    "\\examples\\compose"
+    "\\examples\\hostgroups"
   ],
-  "SelectedNode": "\\examples",
+  "SelectedNode": "\\containers\\postgres\\scripts\\100-ambari.sh",
   "PreviewInSolutionExplorer": false
 }
