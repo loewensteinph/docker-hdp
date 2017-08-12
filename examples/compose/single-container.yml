@@ -19,7 +19,9 @@ services:
        - AMBARI_REPO_URL=${AMBARI_REPO_URL}
     image: hdp/ambari-server
     networks:
-     - dev
+    - dev
+    volumes: 
+    - "../../:/docker-hdp"
     hostname: ambari-server
     domainname: dev
     ports:

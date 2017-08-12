@@ -1,10 +1,16 @@
 {
   "ExpandedNodes": [
     "",
+    "\\containers\\ambari-server",
+    "\\containers\\ambari-server\\scripts",
     "\\containers\\node",
+    "\\containers\\node\\scripts",
+    "\\containers\\postgres",
+    "\\containers\\postgres\\scripts",
+    "\\examples",
     "\\examples\\blueprints",
-    "\\screenshots"
+    "\\examples\\compose"
   ],
-  "SelectedNode": "\\README.md",
+  "SelectedNode": "\\examples",
   "PreviewInSolutionExplorer": false
 }

@@ -1,6 +1,4 @@
 #!/bin/bash
-
-
 sleep 20
 ambari-server start
 
