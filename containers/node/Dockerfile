@@ -35,13 +35,21 @@ RUN yum clean all; \
 # update libselinux. see https://github.com/sequenceiq/hadoop-docker/issues/14
 RUN yum update -y libselinux
 
+# r for spark
+RUN yum install -y epel-release
+RUN yum install -y R-devel libcurl-devel openssl-devel
+
 #generate ssh key
 RUN ssh-keygen -q -N "" -t dsa -f /etc/ssh/ssh_host_dsa_key
 RUN ssh-keygen -q -N "" -t rsa -f /etc/ssh/ssh_host_rsa_key
 RUN sed -ri 's/session    required     pam_loginuid.so/#session    required     pam_loginuid.so/g' /etc/pam.d/sshd
 RUN mkdir -p /root/.ssh && chown root.root /root && chmod 700 /root/.ssh
 
+ENV JAVA_HOME /usr/lib/jvm/jre-openjdk
+
 RUN echo 'root:hadoop' | chpasswd
 
 ADD scripts/start.sh /start.sh
+
+RUN chmod +x /start.sh
 CMD /start.sh

@@ -3,14 +3,14 @@
     "",
     "\\containers",
     "\\containers\\ambari-server",
-    "\\containers\\ambari-server\\scripts",
     "\\containers\\node",
-    "\\containers\\node\\scripts",
-    "\\containers\\postgres",
-    "\\containers\\postgres\\scripts",
     "\\examples",
-    "\\examples\\hostgroups"
+    "\\examples\\blueprints",
+    "\\examples\\compose",
+    "\\sample",
+    "\\sample\\hive",
+    "\\screenshots"
   ],
-  "SelectedNode": "\\containers\\postgres\\scripts\\100-ambari.sh",
+  "SelectedNode": "\\README.md",
   "PreviewInSolutionExplorer": false
 }

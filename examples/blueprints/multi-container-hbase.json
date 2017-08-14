@@ -376,7 +376,7 @@
           "net.topology.script.file.name" : "/etc/hadoop/conf/topology_script.py",
           "io.compression.codecs" : "org.apache.hadoop.io.compress.GzipCodec,org.apache.hadoop.io.compress.DefaultCodec,org.apache.hadoop.io.compress.SnappyCodec",
           "ipc.client.connection.maxidletime" : "30000",
-          "hadoop.proxyuser.root.hosts" : "ambari-server.dev",
+          "hadoop.proxyuser.root.hosts" : "*",
           "io.serializations" : "org.apache.hadoop.io.serializer.WritableSerialization"
         }
       }

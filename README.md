@@ -1,3 +1,6 @@
+# connect to bash running container
+ docker exec -it CONTAINER_ID /bin/bash
+
 # docker-hdp
 
 Built and tested with the latest version of [Docker for Mac](https://docs.docker.com/engine/installation/mac/#/docker-for-mac) and CentOS. Older versions of Docker provided by docker-machine and/or Docker Toolbox will not work.

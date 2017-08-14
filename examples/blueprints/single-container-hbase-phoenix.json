@@ -318,27 +318,27 @@
             "fs.defaultFS" : "true"
           }
         },
-        "properties" : {
-          "fs.defaultFS" : "hdfs://%HOSTGROUP::host_group_1%:8020",
-          "ha.failover-controller.active-standby-elector.zk.op.retries" : "120",
-          "hadoop.security.authentication" : "simple",
-          "ipc.server.tcpnodelay" : "true",
-          "hadoop.proxyuser.hdfs.hosts" : "*",
-          "mapreduce.jobtracker.webinterface.trusted" : "false",
-          "hadoop.security.auth_to_local" : "DEFAULT",
-          "ipc.client.connect.max.retries" : "50",
-          "hadoop.proxyuser.root.groups" : "*",
-          "io.file.buffer.size" : "131072",
-          "ipc.client.idlethreshold" : "8000",
-          "hadoop.proxyuser.hdfs.groups" : "*",
-          "fs.trash.interval" : "360",
-          "hadoop.http.authentication.simple.anonymous.allowed" : "true",
-          "hadoop.security.authorization" : "false",
-          "net.topology.script.file.name" : "/etc/hadoop/conf/topology_script.py",
-          "io.compression.codecs" : "org.apache.hadoop.io.compress.GzipCodec,org.apache.hadoop.io.compress.DefaultCodec,org.apache.hadoop.io.compress.SnappyCodec",
-          "ipc.client.connection.maxidletime" : "30000",
-          "hadoop.proxyuser.root.hosts" : "ambari-server.dev",
-          "io.serializations" : "org.apache.hadoop.io.serializer.WritableSerialization"
+        "properties": {
+          "fs.defaultFS": "hdfs://%HOSTGROUP::host_group_1%:8020",
+          "ha.failover-controller.active-standby-elector.zk.op.retries": "120",
+          "hadoop.security.authentication": "simple",
+          "ipc.server.tcpnodelay": "true",
+          "hadoop.proxyuser.hdfs.hosts": "*",
+          "mapreduce.jobtracker.webinterface.trusted": "false",
+          "hadoop.security.auth_to_local": "DEFAULT",
+          "ipc.client.connect.max.retries": "50",
+          "hadoop.proxyuser.root.groups": "*",
+          "io.file.buffer.size": "131072",
+          "ipc.client.idlethreshold": "8000",
+          "hadoop.proxyuser.hdfs.groups": "*",
+          "fs.trash.interval": "360",
+          "hadoop.http.authentication.simple.anonymous.allowed": "true",
+          "hadoop.security.authorization": "false",
+          "net.topology.script.file.name": "/etc/hadoop/conf/topology_script.py",
+          "io.compression.codecs": "org.apache.hadoop.io.compress.GzipCodec,org.apache.hadoop.io.compress.DefaultCodec,org.apache.hadoop.io.compress.SnappyCodec",
+          "ipc.client.connection.maxidletime": "30000",
+          "hadoop.proxyuser.root.hosts": "*",
+          "io.serializations": "org.apache.hadoop.io.serializer.WritableSerialization"
         }
       }
     },
